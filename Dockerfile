@@ -2,7 +2,7 @@ FROM node:current-alpine
 USER root
 
 RUN apk add --no-cache --update git \
-  && git clone https://github.com/newrelic-forks/cctail.git cctail
+  && git clone https://github.com/openmindlab/cctail.git cctail
 
 WORKDIR /cctail
 RUN npm install
